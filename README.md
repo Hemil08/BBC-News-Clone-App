@@ -12,7 +12,7 @@ A modern, responsive BBC News Clone built using **React JS**, **Tailwind CSS**, 
 
 ## 🚀 Live Demo
 
-[🔗 Live Site](https://your-deployed-link.com)
+[🔗 Live Site](https://bbcnewscloneapp.vercel.app/)
 
 ---
 
