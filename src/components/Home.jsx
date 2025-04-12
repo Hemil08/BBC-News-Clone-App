@@ -17,20 +17,19 @@ const Home = (props) => {
         }catch(error){
             console.error(error)
         }
-        setDoc()
     }
 
     const API_KEY = process.env.REACT_APP_NEWS_API_KEY;
 
     const getNews = () =>{
-        fetch(`https://newsapi.org/v2/everything?q=${props.menu ? props.menu : "everything"}&sortBy=popularity&apiKey=6952103462194880b3e73b13f699755e`)
+        fetch(`https://newsapi.org/v2/everything?q=${props.menu ? props.menu : "everything"}&sortBy=popularity&apiKey=${API_KEY}`)
         .then(res => res.json())
         .then(json => setNews(json.articles))
     }
 
     useEffect(()=>{
         getNews()
-    },[news])
+    },[])
 
     console.log(news);
 
