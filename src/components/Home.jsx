@@ -29,7 +29,7 @@ const Home = (props) => {
 
     useEffect(()=>{
         getNews()
-    },[news])
+    },[props.menu])
 
     console.log(news);
 
